@@ -1,0 +1,17 @@
+#container {
+  align-items: center;
+  background-color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.avatar {
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  margin: 10px;
+  padding: 1rem;
+  width: 50px;
+}
