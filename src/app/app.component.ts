@@ -1,4 +1,5 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
+import { AVATARS } from './avatars';
 
 @Component({
   selector: 'my-app',
@@ -6,46 +7,9 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  avatars = [
-    {
-      img: 'https://img.freepik.com/foto-gratis/cabeza-hipster-espacio-vacio-ilustracion-render-3d_1172-983.jpg?w=826',
-      id: 1,
-    },
-    {
-      img: 'https://img.freepik.com/foto-gratis/avatar-masculino-representacion-3d-cabello-rubio-sueter-verde-anteojos_477250-11.jpg?w=826',
-      id: 2,
-    },
-
-    {
-      img: 'https://img.freepik.com/foto-gratis/3d-rendering-personaje-masculino-franela-azul-fondo-blanco_477250-12.jpg?w=826',
-      id: 3,
-    },
-
-    {
-      img: 'https://img.freepik.com/foto-gratis/3d-render-avatar-masculino-sueter-azul-bueno-foto-perfil_477250-13.jpg?w=826',
-      id: 4,
-    },
-    {
-      img: 'https://img.freepik.com/foto-gratis/cabeza-hipster-espacio-vacio-ilustracion-render-3d_1172-983.jpg?w=826',
-      id: 5,
-    },
-    {
-      img: 'https://img.freepik.com/foto-gratis/avatar-masculino-representacion-3d-cabello-rubio-sueter-verde-anteojos_477250-11.jpg?w=826',
-      id: 6,
-    },
-
-    {
-      img: 'https://img.freepik.com/foto-gratis/3d-rendering-personaje-masculino-franela-azul-fondo-blanco_477250-12.jpg?w=826',
-      id: 7,
-    },
-
-    {
-      img: 'https://img.freepik.com/foto-gratis/3d-render-avatar-masculino-sueter-azul-bueno-foto-perfil_477250-13.jpg?w=826',
-      id: 8,
-    },
-  ];
-  dragIndex: any;
-  dropIndex: any;
+  avatars = AVATARS;
+  dragIndex: number;
+  dropIndex: number;
   temporal: any;
 
   drag(i) {

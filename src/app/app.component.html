@@ -1,10 +1,11 @@
 <section id="container" (drop)="drop($event)" (dragover)="allowDrop($event)">
-  <img
+  <div
     *ngFor="let avatar of avatars; let i = index"
     class="avatar"
-    [src]="avatar.img"
     draggable="true"
     (dragstart)="drag(i)"
     [id]="i"
-  />
+  >
+    <img [src]="avatar.img" />
+  </div>
 </section>
